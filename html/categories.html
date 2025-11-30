@@ -1,0 +1,187 @@
+<!--
+Abdulmajeed Alhaifi
+2236268
+2025/10/3
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>categories Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+</head>
+
+<body>
+    <!-- header with navbar -->
+    <header>
+        <nav class="container">
+            <div class="logo">E-Book Library</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><span>categories</span></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img src="../images/fcit.png" alt="Logo" class="fcit">
+        </nav>
+    </header>
+    <main id="content">
+        <!-- Hero section -->
+        <section class="cat-hero">
+            <div class="container">
+                <h1 class="title">Browse by Categories</h1>
+                <p>Explore our free e-books by topic. Click a category to filter the list of books below.</p>
+            </div>
+        </section>
+
+        <!-- Categories Pills -->
+        <section class="categories-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Categories</h2>
+                    <p>Select a category to view matching books.</p>
+                </div>
+
+                <div class="cat-grid" id="catGrid">
+                    <button class="cat-pill active" data-cat="all"><span class="cat-dot"></span>All</button>
+                    <button class="cat-pill" data-cat="Technology"><span class="cat-dot"></span>Technology</button>
+                    <button class="cat-pill" data-cat="Literature"><span class="cat-dot"></span>Literature</button>
+                    <button class="cat-pill" data-cat="Science"><span class="cat-dot"></span>Science</button>
+                    <button class="cat-pill" data-cat="Self-Development"><span
+                            class="cat-dot"></span>Self-Development</button>
+                    <button class="cat-pill" data-cat="Business"><span class="cat-dot"></span>Business</button>
+                    <button class="cat-pill" data-cat="History"><span class="cat-dot"></span>History</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Grid -->
+        <section class="books-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Books</h2>
+                    <p>Click a book to view details and download.</p>
+                </div>
+
+                <div class="books-grid" id="booksGrid">
+
+                    <article class="book-card" data-cat="Technology">
+                        <img src="../images/tech1.jpg" alt="Clean Code Cover" class="book-cover">
+                        <div class="book-body">
+                            <h3 class="book-title">Clean Code (Essentials)</h3>
+                            <div class="book-meta">by Robert C. Martin</div>
+                            <span class="book-tag">Technology</span>
+                            <div class="book-actions">
+                                <a class="btn-view" href="../books/tech1.html">Open Details</a>
+                                <small class="book-meta">PDF • 2.8 MB</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-cat="Self-Development">
+                        <img src="../images/self1.jpg" alt="Atomic Habits Cover" class="book-cover">
+                        <div class="book-body">
+                            <h3 class="book-title">Atomic Habits (Guide)</h3>
+                            <div class="book-meta">by James Clear</div>
+                            <span class="book-tag">Self-Development</span>
+                            <div class="book-actions">
+                                <a class="btn-view" href="../books/self1.html">Open Details</a>
+                                <small class="book-meta">PDF • 1.9 MB</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-cat="Science">
+                        <img src="../images/sci1.jpg" alt="Brief History of Time Cover" class="book-cover">
+                        <div class="book-body">
+                            <h3 class="book-title">A Brief History of Time</h3>
+                            <div class="book-meta">by Stephen Hawking</div>
+                            <span class="book-tag">Science</span>
+                            <div class="book-actions">
+                                <a class="btn-view" href="../books/sci1.html">Open Details</a>
+                                <small class="book-meta">PDF • 3.9 MB</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-cat="Literature">
+                        <img src="../images/lit1.jpg" alt="Pride and Prejudice Cover" class="book-cover">
+                        <div class="book-body">
+                            <h3 class="book-title">Pride and Prejudice</h3>
+                            <div class="book-meta">by Jane Austen</div>
+                            <span class="book-tag">Literature</span>
+                            <div class="book-actions">
+                                <a class="btn-view" href="../books/lit1.html">Open Details</a>
+                                <small class="book-meta">PDF • 1.4 MB</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-cat="Business">
+                        <img src="../images/biz1.jpg" alt="Zero to One Cover" class="book-cover">
+                        <div class="book-body">
+                            <h3 class="book-title">Zero to One</h3>
+                            <div class="book-meta">by Peter Thiel</div>
+                            <span class="book-tag">Business</span>
+                            <div class="book-actions">
+                                <a class="btn-view" href="../books/biz1.html">Open Details</a>
+                                <small class="book-meta">PDF • 2.1 MB</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-cat="History">
+                        <img src="../images/his1.jpg" alt="Sapiens Cover" class="book-cover">
+                        <div class="book-body">
+                            <h3 class="book-title">Sapiens (Overview)</h3>
+                            <div class="book-meta">by Yuval Noah Harari</div>
+                            <span class="book-tag">History</span>
+                            <div class="book-actions">
+                                <a class="btn-view" href="../books/his1.html">Open Details</a>
+                                <small class="book-meta">PDF • 3.0 MB</small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <p class="empty-hint" id="emptyHint">No books found for this category.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>E-Book Library</h3>
+                <p>Your free digital bookshelf — explore, download, and grow with knowledge anytime, anywhere.</p>
+            </div>
+            <p>&copy; 2025 E-Book Library. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+
+<!-- small script for categories pills -->
+<script>
+    const pills = document.querySelectorAll('.cat-pill');
+    const cards = document.querySelectorAll('.book-card');
+    const hint = document.getElementById('emptyHint');
+
+    pills.forEach(p => p.addEventListener('click', () => {
+        pills.forEach(x => x.classList.remove('active'));
+        p.classList.add('active');
+        const cat = p.dataset.cat;
+
+        let visible = 0;
+        cards.forEach(card => {
+            const match = (cat === 'all') || (card.dataset.cat === cat);
+            card.style.display = match ? '' : 'none';
+            if (match) visible++;
+        });
+
+        hint.style.display = visible ? 'none' : 'block';
+    }));
+</script>
+
+</html>
